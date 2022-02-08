@@ -16,7 +16,7 @@
     <header>
       <div class="container">
           <div class="row">
-              <div class="logo"><img src="Logo.svg" alt="logo"></div>
+              <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
               <ul class="menu">
                   <a href="home.php"><li class="menu_link menu_active">Home</li></a>
                   

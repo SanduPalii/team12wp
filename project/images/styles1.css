@@ -53,7 +53,7 @@ header{
 }
 .promo{
     min-height: 500px;
-    background: url("backgroung.png") center center/cover no-repeat;
+    background: url("images/backgroung.png") center center/cover no-repeat;
 }
 .title{
     font-family: Archivo;
@@ -183,7 +183,7 @@ h3{
 }
 .about_us{
     min-height: 583px;
-    background: url("Group\ 25.png") center center/cover no-repeat;
+    background: url("images/Group\ 25.png") center center/cover no-repeat;
 }
 .container_about_us{
     padding-top: 78px;
@@ -305,7 +305,7 @@ h3{
 }
 
 .facebook{
-    src: url("facebook.png");
+    src: url("images/facebook.png");
 .icons{
     padding-top: 14px;
 }
@@ -366,7 +366,7 @@ h2{
 }
 .about_us_1{
     min-height: 583px;
-    background: url("Rectangle\ 12.png") center center/cover no-repeat;
+    background: url("images/Rectangle\ 12.png") center center/cover no-repeat;
 }
 @media (max-width: 700px) 
 {

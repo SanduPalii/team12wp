@@ -26,13 +26,13 @@ include 'header.php';?>
                     grow from the people they surround themselves with.</p>
             </div>
             <div class= "col-md-6 Form contact">
-                <p><img class="first-image" src ="Rectangle 1.png"width="550"></p>
+                <p><img class="first-image" src ="images/Rectangle 1.png"width="550"></p>
             </div>
     </div>
     </div>
     <div class="row">
         <div class= "col-md-6 Form contact">
-            <p><img class="first-image" src ="123.png"width="550"></p>
+            <p><img class="first-image" src ="images/123.png"width="550"></p>
         </div>
         <div class= "col-md-6 Form form1">
             <h2>Who is coliving for?</h2>

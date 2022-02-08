@@ -17,7 +17,7 @@ include 'header.php';?>
     <div class="catalog">
       <div class="catalog_wrapper">
         <div class="catalog_img">
-          <img src="Group 5.png" alt="image">
+          <img src="images/Group 5.png" alt="image">
         </div>
         <div class="catalog_info">
           <ul class="catalog_menu">
@@ -53,7 +53,7 @@ include 'header.php';?>
     <div class="catalog">
       <div class="catalog_wrapper">
         <div class="catalog_img">
-          <img src="Group 7.png" alt="image">
+          <img src="images/Group 7.png" alt="image">
         </div>
         <div class="catalog_info">
           <ul class="catalog_menu">
@@ -90,7 +90,7 @@ include 'header.php';?>
     <div class="catalog">
       <div class="catalog_wrapper">
         <div class="catalog_img">
-          <img src="Group 10.png" alt="image">
+          <img src="images/Group 10.png" alt="image">
         </div>
         <div class="catalog_info">
           <ul class="catalog_menu">

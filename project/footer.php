@@ -29,9 +29,9 @@
         <div class="footer_elem">
           <p>FOLLOW US</p>
           <div class="icons">
-            <a href="#" class="facebook"><img src="facebook.png"></a>
-            <a href="#" class="youtube"><img src="youtube.png"></a>
-            <a href="#" class="watsapp"><img src="whatsapp.png"></a>
+            <a href="#" class="facebook"><img src="images/facebook.png"></a>
+            <a href="#" class="youtube"><img src="images/youtube.png"></a>
+            <a href="#" class="watsapp"><img src="images/whatsapp.png"></a>
           </div> 
         </div>
       </div>
