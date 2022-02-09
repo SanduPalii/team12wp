@@ -2,12 +2,10 @@
     font-family: Archivo;
     src: url("/fonts/archivo/Archivo[wdth\,wght].ttf");
 }
-
 @font-face {
     font-family: Judson;
     src: url("/fonts/judson/Judson-Regular.ttf");
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -18,19 +16,16 @@
     max-width: 1192px;
     margin: 0 auto;
 }
-
 header{
     background-color: rgba(0,0,0,0.6);
     height: 148px;
 }
-
 .row{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 55px;
 }
-
 .menu{
     display: flex;
     flex-direction: row;
@@ -46,7 +41,6 @@ header{
     color: #FFFFFF;
     width: 100%;
 }
-
 .menu a{
     text-decoration: none;
     color: #fff;
@@ -57,14 +51,10 @@ header{
 .menu_active{
     color: #D9AB74;
 }
-
 .promo{
-    min-height: 722px;
+    min-height: 500px;
     background: url("images/backgroung.png") center center/cover no-repeat;
 }
-
-
-
 .title{
     font-family: Archivo;
     font-style: normal;
@@ -78,7 +68,6 @@ header{
     display: flex;
     justify-content: flex-end;
 }
-
 .subtitle{
     font-family: Judson;
     font-style: normal;
@@ -89,16 +78,13 @@ header{
     max-width: 784px;
     padding-top: 35px;
 }
-
 .apartment{
-    min-height: 1903px;
+    min-height: 850px;
 }
-
 h2{
     font-family: Archivo;
     text-transform: uppercase;
 }
-
 .apartment_title{
     font-style: normal;
     font-weight: 500;
@@ -108,24 +94,22 @@ h2{
     margin-top: 68px;
     text-align: center;
 }
-
 .catalog{
     display: flex;
     flex-direction: row;
+    background-color:#FFF7EE;
+   
 }
-
 .catalog_img{
     width: 682px;
     height: 416px;
     margin-top: 76px;
 }
-
 .catalog_info{
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
-
 .catalog_menu{
     display: flex;
     flex-direction: row;
@@ -137,24 +121,19 @@ h2{
     padding: 13px 0;
     line-height: 25px;
 }
-
 .catalog_link{
     border-right: 2px solid #d2cdcd;
     padding-right: 28px;
 }
-
 .catalog_link:last-child{
     border-right: none;
 }
-
 .catalog_link span{
     color:#363535;
 }
-
 .catalog_descr{
     margin: 76px 0 0 40px;
 }
-
 h3{
     font-family: Archivo;
     font-style: normal;
@@ -163,7 +142,6 @@ h3{
     line-height: 39px;
     color: #000000;
 }
-
 .descr_text{
     margin-top: 23px;
     font-family: Judson;
@@ -173,7 +151,6 @@ h3{
     line-height: 21px;
     color: #201E21;
 }
-
 .descr_btn{
     width: 268px;
     height: 60px;
@@ -184,42 +161,34 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
 .descr_btn a{   
     font-family: Judson;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
 }
-
 .descr_btn:hover{
     background: #ca9656;
 }
-
 .catalog:nth-child(3){
     flex-direction: row-reverse;
-
 }
-
 .catalog:nth-child(3) .catalog_descr{
     margin-left: 0;
     margin-right: 32px;
 }
-
 .about_us{
     min-height: 583px;
-    background: url("images/about_us.jpg") center center/cover no-repeat;
+    background: url("images/Group\ 25.png") center center/cover no-repeat;
 }
-
 .container_about_us{
     padding-top: 78px;
     margin-left: 726px;
 }
-
 .h2_white{
     font-family: Archivo;
     font-style: normal;
@@ -229,7 +198,6 @@ h3{
     text-transform: uppercase;
     color: #FFFFFF;   
 }
-
 .h2_subtitle{
     font-family: Judson;
     font-style: normal;
@@ -239,40 +207,33 @@ h3{
     /* or 139% */
     color: #FFFFFF;
     padding-top: 36px;
-    width: 478px;
+    
 }
-
 .news{
     height: 600px;
     background-color: rgb(42, 41, 41);
 }
-
 .news_wrapper{
     margin-top: 63px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .news .h2_white{
     padding-top: 50px;
     text-align: center;
 }
-
 .news .text_white{
     width: 374px;
 }
-
 .news_info h3{
     font-family: Archivo;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 39px;
-
     color: #FFFFFF;
 }
-
 .date{
     font-family: Judson;
     font-style: italic;
@@ -282,7 +243,6 @@ h3{
     color: #FFFFFF;
     margin-top: 15px;
 }
-
 .news_info .text_white{
     font-family: Judson;
     font-style: normal;
@@ -293,23 +253,19 @@ h3{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 .news_info .descr_btn{
     margin-top: 40px;
 }
-
 .footer{
     height: 220px;
     background-color: #D9C2A7;
 }
-
 .footer_wrapper{
     display: flex;
     padding-top: 48px;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .adress{
     font-family: Judson;
     font-style: normal;
@@ -319,7 +275,6 @@ h3{
     color: #201E21;
     width: 228px;
 }
-
 .footer_elem{
     font-family: Judson;
     font-style: normal;
@@ -329,21 +284,17 @@ h3{
     /* or 133% */
     color: #201E21;
 }
-
 .footer_link{
     text-decoration: none;
     color: #201E21;
 }
-
 .footer_link:hover{
     color:#D9AB74;
 }
-
 .footer_elem ul{
     display: flex;
     flex-direction: column;
 }
-
 .follow_us p{
     font-family: Judson;
     font-style: normal;
@@ -353,6 +304,8 @@ h3{
     color: #201E21;
 }
 
+.facebook{
+    src: url("images/facebook.png");
 .icons{
     padding-top: 14px;
 }
@@ -371,4 +324,64 @@ h3{
 
 .watsapp:hover{
     filter: invert(27%) sepia(51%) saturate(178%) hue-rotate(346deg) brightness(104%) contrast(97%);
+} 
+
+input[type=submit]
+{
+    color:#171515 ;
+    background-color:#dd832f ;
+    border-color: #dc8736;
+    padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 08px;
+  margin: 1px 2px;
+  cursor: pointer;
+}
+
+.first-image
+{
+    width: 100%;
+    height: auto;
+}
+div.row{
+    background-color:#FFF7EE;
+   
+}
+h2{
+    text-align: center;
+}
+.story{
+    min-height: 583px;
+    background: url("Rectangle\ 12.png") center center/cover no-repeat;
+}
+.container_story{
+    padding-top: 78px;
+    margin-left: 726px;
+}
+.apartment{
+    background-color:#FFF7EE;
+   
+}
+.about_us_1{
+    min-height: 583px;
+    background: url("images/Rectangle\ 12.png") center center/cover no-repeat;
+}
+@media (max-width: 700px) 
+{
+    header{
+        background: wheat;
+    }
+    footer{
+        width: 50%;
+    }
+}
+
+@media (max-width:400px)
+{
+    footer{
+        width:100%;
+        border: 1px solid burlywood;
+    }
 }
