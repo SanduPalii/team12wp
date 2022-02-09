@@ -20,7 +20,7 @@
               <ul class="menu">
                   <a href="home.php"><li class="menu_link menu_active">Home</li></a>
                   
-                  <a href="#"><li class="menu_link">Apartment</li></a>
+                  <a href="apply.php"><li class="menu_link">Apply </li></a>
                   
                   <a href="about.php"><li class="menu_link">About</li></a>
                   
