@@ -28,11 +28,11 @@ include 'header.php';?>
       <input type="radio" name="gender" value="male">Male
         <input type="radio" name="gender" value="other">Other
   <br><br>
-        Area required in square meter : <input type="text" name="areareq">
+        Area required in square meter : <input type="number" name="areareq">
         <br><br>
-        Maximum Rent: <input type="text" name="maxrent">
+        Maximum Rent: <input type="number" name="maxrent">
+       Please note: amount should be between 500-1500 euros .
         <br><br>
-
         Building type:
         <br><br>
   <input type="checkbox" id="block" name="block" value="block of flats">
