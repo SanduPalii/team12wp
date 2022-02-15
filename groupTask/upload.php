@@ -1,11 +1,44 @@
 <?php
-date_default_timezone_set('Europe/Helsinki');
-//target_dir is the location where you want your files to be uploaded
+if (isset($_POST['submit'])){
+    $file= $_FILES['file'];
+    
+    $fileName = $_FILES['file']['name'];
+    $fileTmpName = $_FILES['file']['tmp_name'];
+    $fileSize = $_FILES['file']['size'];
+    $fileError = $_FILES['file']['error'];
+    $fileType = $_FILES['file']['type'];
 
-$dest = "images/".basename($_FILES["userfile"] ["name"]);
-    if (move_uploaded_file($_FILES["userfile"] ["tmp_name"], $dest)){
-        echo "The file has been successfully uploaded. <br>";
-        echo "<a href='/images/'> Click to see list of files </a>";
+    $fileExt = explode('.', $fileName);
+    $fileActualExt = strtolower(end($fileExt));
+
+    $allowed = array('jpg','jpeg','png','pdf');
+    
+
+    if (in_array($fileActualExt, $allowed)){
+        if($fileError === 0){
+            if($fileSize<200000){
+                $fileNameNew = uniqid('', true).".".$fileActualExt;
+                $fileDestination = 'uploaded/'.$fileNameNew;
+                move_uploaded_file($fileTmpName, $fileDestination);
+                echo "The file has been successfully uploaded. <br>";
+                echo "<a href='uploaded/'> <br>Click to see the images </a>";
+
+                
+
+            } else {
+                echo"Your file is too big!";
+            }
+        } else {
+            echo"There was an error uploading your file!";
+        }
+     
+
+    } else {
+        echo"You cannot upload files of this type!";
     }
-    else "Unable to upload file";
+    
+
+
+}
+
 ?>
