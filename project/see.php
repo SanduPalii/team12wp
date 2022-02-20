@@ -23,7 +23,7 @@ include_once 'header.php';
   <thead>
     <tr>
       <th scope="col">apartment_id</th>
-      <th scope="col">Price</th>
+      <th scope="col">Price(€)</th>
       <th scope="col">Available</th>
       <th scope="col">Wifi</th>
       <th scope="col">Beds</th>
