@@ -36,7 +36,7 @@ include_once 'header.php';
 
 
   <?php
-$sql="Select * from `apartment`";
+$sql="Select * from `apartment`where available=true;";
 $result=mysqli_query($conn,$sql);
 if($result){
   while($row=mysqli_fetch_assoc($result)){
