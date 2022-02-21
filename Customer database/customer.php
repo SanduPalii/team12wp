@@ -14,14 +14,12 @@ if(isset($_POST['submit'])){
     $date = $_POST['date'];
     $phonenumber = $_POST['phone'];
     $email =  $_POST['email'];
-    $id= $_GET['updateid'];
 
-    $sql="UPDATE `customer` SET id=$id, f_name='$firstname', l_name='$lastname', password='$password',contract_rent='$contract',date_end= '$date', phone_number= '$phonenumber',email= '$email' where id=$id"; 
-   
+    $sql="insert into 'customer'(f_name,l_name,password,contract_rent,date_end,phone_number,email)
+    values ('$firstname','$lastname','$password','$contract','$date','$phonenumber','$email')";
     $result = mysqli_query($con,$sql);
     if($result){
-        echo "data updated successfully";
-       
+        echo "data inserted successfully";
 
     }else{
         die(mysqli_error($con));
@@ -31,7 +29,7 @@ if(isset($_POST['submit'])){
 <!-- adding header title -->
 <div class="wrapper">
       <div class="container">
-        <h1 class="title">Update  Customer</h1>
+        <h1 class="title">Add Customer</h1>
         <div class="subtitle"></div>
       </div>
     </div>
@@ -95,7 +93,7 @@ if(isset($_POST['submit'])){
 
 
     <!-- submit functionality -->
-  <button type="submit" class="btn btn-primary" name = "submit">Update</button>
+  <button type="submit" class="btn btn-primary" name = "submit">Submit</button>
 </form>
 </section>
 <?php 
