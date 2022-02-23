@@ -1,0 +1,535 @@
+@media(max-width: 1300px){
+    .contact_wrapper{
+        flex-direction: column;
+    }
+
+    .contact_data{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .maps{
+        margin-top: unset;
+    }
+
+    .contact_list{
+        padding-left: 40px;
+    }
+
+    .contact_list li::before{
+        left: 25px;
+    }
+
+    .contact_form{
+        align-items: center;
+    }
+}
+
+
+@media(max-width:1200px){
+    .menu{
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .promo, .wrapper{
+        min-height: 522px;
+    }
+
+    .title, .contact_title, .story_title{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .apartment{
+        min-height: 1600px;
+    }
+    
+    .apartment_title{
+        font-size: 40px;
+        line-height: 36px;
+        margin-top: 50px;
+    }
+
+    .descr_title, .card_title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .descr_text{
+        font-size: 16px;
+        line-height: 17px;
+        min-height: unset;
+    }
+
+    .descr_btn{
+        margin-top: 25px;
+    }
+
+    .catalog_image{
+        width: 580px;
+        height: 350px;
+    }
+
+    .catalog_descr{
+        margin:76px 0 0 0;
+    }
+    .catalog:nth-child(3) .descr_text {
+        margin-right: 50px;
+    }
+
+    .about{
+        min-height: 500px;
+    }
+
+    .about_wrapper{
+        margin-left: 0;
+        position: absolute;
+        right: 0;
+        right: 124px
+    }
+
+    .card{
+        width: calc(100%/3);
+    }
+
+    .news_title{
+        font-size: 40px;
+        line-height: 36px;
+        padding-top: 35px;
+    }
+
+    .card_text{
+        width: calc(100% - 72px);
+    }
+    .info_wrapper:last-child .info__data{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1100px){
+    .about_info .info_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_wrapper .info_cat{
+        margin-top: 28px;
+    }
+
+    .contact_info{
+        padding-bottom: 50px;
+    }
+
+    .contact_data{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .contact_subtitle{
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .contact_list li{
+        position: relative;
+    }
+
+    .contact_list li::before{
+        left: -25px;
+    }
+
+    .maps{
+        margin-top: 30px;
+    }
+
+    .contact_form{
+        margin-top: 40px;
+    }
+}
+
+
+@media(max-width: 998px){
+    .menu{
+        display: none;
+    }
+
+    header{
+        position: relative;
+        height: 95px;
+    }
+
+    .row{
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .menu_mini, .hamburger{
+        display: block;
+        z-index: 99;
+    }
+
+    .panel{
+        flex-direction: row;
+        min-height: 70px;
+        right: 110px;
+    }
+
+    .promo .wrapper{
+        min-height: 430px;
+    }
+
+    .story_title{
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .title, .story_title{
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .title, .subtitle{
+        margin-left: 350px;
+    }
+
+    .subtitle{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .catalog{
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 650px;
+        margin: 0 auto;
+    } 
+    .catalog:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .descr_title{
+        text-align: center;
+    }
+
+    .catalog_descr{
+        margin: 50px;
+    }
+
+    .catalog_image{
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    .catalog_menu{
+        margin: 0 auto;
+        margin-top: 21px;
+        padding-left: 20px;
+    }
+
+    .about{
+        margin-top: 30px;
+        min-height: 410px;
+    }
+
+    .about_title, .news_title{
+        font-size: 40px;
+        line-height: 36px;
+    }
+
+    .about_subtitle{        
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .card{
+        position: relative;
+    }
+
+    .card_wrapper{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card_title, .card_date, .card_text, .card_btn{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card_date{
+        margin-top: 21px;
+    }
+    .card_text{
+        /* text-align: unset; */
+        margin-top: 21px;
+    }
+
+    .card_btn{
+        margin-top: 21px;
+    }
+
+    .maps{
+        width: 100%;
+        min-width: unset;
+    }
+
+    .maps .maps_info{
+        width: 100%;
+    }
+
+    .footer_wrapper{
+        justify-content: center;
+    }
+
+    .footer_column:first-child{
+        margin-right: 15px;
+    }
+
+    .footer_column:last-child{
+        margin-left: 15px;
+    }
+
+    .footer_column:nth-child(2),.footer_column:nth-child(3),.footer_column:nth-child(4){
+        display: none;
+    }
+
+}
+
+@media(max-width:720px){
+    header{
+        height: 70px;
+    }
+
+    .row{
+        padding-top: 20px;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .panel{
+        min-height: 20px;
+        max-height: 45px;
+    }
+    .panel div{
+        height: 30px;
+        width: 30px;
+    }
+
+    .title, .subtitle{
+        margin-left: 250px;
+    }
+
+    .promo, .promo .wrapper{
+        min-height: 350px;
+    }
+
+    .story_title, .contact_title{
+        font-size: 36px;
+    }
+
+    .data_title{
+        font-size: 20px;
+    }
+
+    .data_text{
+        font-size: 16px;
+        line-height: 18px;
+        width: 100%;
+    }
+
+    .about_info{
+        margin-top: 40px;
+    }
+
+    .about_info .info_wrapper{
+        margin-top: 35px;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 12px;
+    }
+
+    .apartment_title {
+        font-size: 28px;
+        line-height: 30px;
+        margin-top: 35px;
+    }
+
+    .descr_title, .card_title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .descr_btn{
+        width: unset;
+        height: unset;
+        padding: 8px 24px;
+    }
+
+    .catalog{
+        width: unset;
+    }
+
+    .catalog_image{
+        width: 100%;
+    }
+
+    .catalog_menu{
+        display: none;
+    }
+
+    .catalog_image img{
+        top: 0;
+        left: 0;
+    }
+
+    .catalog_descr{
+        margin: 60px;
+    }
+
+    .about{
+        margin-top: 70px;
+    }
+
+    .about_wrapper{
+        padding: 0 36px;
+        right: unset;
+    }
+
+    .about_title, .news_title{
+        font-size: 28px;
+        line-height: 30px;    
+    }
+
+    .about_subtitle{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .card_btn{
+        width: 268px;
+    }
+
+    .contact_form input{
+        width: 333px;
+        height: 50px;
+    }
+
+    .contact_form textarea{
+        width: 333px;
+    }
+}
+
+@media(max-width: 620px){
+    .catalog_image{
+        height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .info_wrapper:first-child .data_title{
+        padding-top: 0;
+    }
+
+    .data_title{
+        padding-top: 40px;
+    }
+}
+
+@media(max-width: 530px){
+    .panel{
+        display: none;
+    }
+
+    .title, .subtitle{
+        margin: 0 auto;
+        margin-left: 0;
+    }
+    .catalog_descr{
+        margin: unset;
+        margin: 30px 0;
+    }
+
+    .footer_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_column:first-child{
+        margin-right: -40px;
+    }
+
+    .footer_column:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
+    }
+
+    .about_info .info_wrapper{
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .data_text{
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .story{
+        margin-top: 40px;
+        min-height: 550px;
+    }
+
+    .story_text{
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .contact_form{
+        margin-left: 0;
+    }
+
+    .contact_form input, .contact_form textarea{
+        width: 250px;
+
+    }
+
+    .contact_warning{
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 9px;
+    }
+
+    .contact_subtitle {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .footer{
+        padding-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 435px){
+    .catalog_image img{
+        height: 250px;
+    }
+    
+    .data_title{
+        padding-top: 40px;
+    }
+    .about_info .info_wrapper{
+        margin-top: 0px;
+    }
+}

@@ -1,156 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title> COLIVING </title>
-    <link rel="stylesheet" href="styles1.css">
-
-    <style>
-      
-      
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: #D9AB74;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-      }
-      
-      #myBtn:hover {
-        background-color: #eca54d;
-      }
-      </style>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-  <section class="promo">
-    <header>
-      <div class="container">
-          <div class="row">
-              <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
-              <ul class="menu">
-                <a href="index.html"><li class="menu_link menu_active">Home</li></a>
-                  
-                <a href="apply.html"><li class="menu_link">Apply</li></a>
-                
-                <a href="about.html"><li class="menu_link">About</li></a>
-                
-                <a href="#"><li class="menu_link">News</li></a>
-                
-                <a href="contact.html"><li class="menu_link">Contact</li></a>
-              </ul>
-          </div>
-      </div>
-  </header>
+    <section class="contact">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+                    <ul class="menu">
+                        <a href="index.html"><li class="menu_link">Home</li></a>
+                        
+                        <a href="apartment.html"><li class="menu_link">Apartment</li></a>
+                        
+                        <a href="about_us.html"><li class="menu_link">About</li></a>
+                        
+                        <a href="index.html"><li class="menu_link">News</li></a>
+                        
+                        <a href="#"><li class="menu_link active">Contact</li></a>
+    
+                    </ul>
+                </div>
+            </div>
 
-  
-<div class="wrapper">
-    <div class="container">
-      <h1 class="title">CONTACT US</h1>
-      <div class="subtitle"></div>
-    </div>
-  </div>
-</section>
-<section class="apartment">
-  <div class="container">
-    <h2 class="apartment_title">LETS STARTS A CONVERSATION</h2>
-  <div class="catalog">
-    <div class="catalog_wrapper">
-      <div class="catalog_img">
-        <p><img src="images/clock.jpg" width="35" >  Opening Time: 06:00-18:00</p>
-        <p><img src="images/email.png" width="35" >  Email: hey@yahooo.com</p>
-        <p><img src="images/phone.png" width="35" >  Phone: +358-451782800</p>
-        <p><img src="images/map.jpg" width="35">   Address: Hämeenlinna 23, Finland</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1978261.9342150355!2d24.512686!3d61.03949500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468e5c42a583f8cb%3A0x400b551554bad30!2sH%C3%A4meenlinna!5e0!3m2!1sen!2sfi!4v1643294848772!5m2!1sen!2sfi" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  <div class="catalog">
-    <div class="catalog_wrapper">
-    </div>
-    <div class="catalog_descr">
-      <div class="descr_title"><h3></h3></div>
-      <div class="descr_text">
-        <form  action="/action_page.php">
-          <p> <input type="text" id="fname" name="fname" value="Name"></p>
-           <p><input type="email" id="fname" name="fname" value="Email"></p>
-           <p><input id="myInput" type="text" name="myCountry" placeholder="Country"> </p>
-           <p><textarea rows="16" cols="40" name="comment" form="usrform">Message</textarea> </p>
-           <p>Please note:all fields are required to fill.</p>
-         </form>
-      </div>
-      <div class="descr_btn"><a href="#">SEND MESSAGE</a></div>
-      <p></p>
-    </div>
-  </div>
-  </div>
-  </div>
+            <ul class="menu_mini">
+                <li class="menu_item"><a href="index.html" class="menu_link">Home</a></li>
+                <li class="menu_item"><a href="index.html" class="menu_link">Apartment</a></li>
+                <li class="menu_item"><a href="about_us.html" class="menu_link">About</a></li>
+                <li class="menu_item"><a href="index.html" class="menu_link">News</a></li>
+                <li class="menu_item"><a href="contact.html" class="menu_link">Contact</a></li>
+            </ul>
+    
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        </header>
 
-  <div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-  </div>
-
-  <section class="footer">
-    <div class="container">
-      <div class="footer_wrapper">
-        <div class="adress">Lehmustie 5A21
-          13100 Hämenlinna<br>
-          Y-tunnus - 53109
-          Copyright © 2022</div>
-        <div class="footer_elem">
-          <ul>
-            <a href="#" class="footer_link">Apply for</a>
-            <a href="#" class="footer_link">Apartments</a>
-            <a href="#" class="footer_link">FAQ</a>
-          </ul>
+        <div class="panel">
+            <div id="blue" data-color="#b3e5fc" onclick="changeColor('blue')"></div>
+            <div id="red" data-color="#ce8f96" onclick="changeColor('red')"></div>
+            <div id="purple" data-color="#8e6ad1" onclick="changeColor('purple')"></div>
+            <div id="green" data-color="#c5e1a5" onclick="changeColor('green')"></div>
+            <div id="orange" data-color="#D9AB74" onclick="changeColor('orange')"></div>
         </div>
-        <div class="footer_elem">
-          <ul>
-            <a href="#" class="footer_link">Report a problem</a>
-            <a href="#" class="footer_link">Terminate you</a>
-            <a href="#" class="footer_link">Privacy policy</a>
-          </ul>
-        </div>
-        <div class="footer_elem">
-          <ul>
-            <a href="contactus.php" class="footer_link">Contact</a>
-            <a href="#" class="footer_link">Information</a>
-            <a href="#" class="footer_link">E-form</a>
-          </ul>
-        </div>
-        <div class="footer_elem">
-          <p>FOLLOW US</p>
-          <div class="icons">
-            <a href="#" class="facebook"><img src="images/facebook.png"></a>
-            <a href="#" class="youtube"><img src="images/youtube.png"></a>
-            <a href="#" class="watsapp"><img src="images/whatsapp.png"></a>
-          </div> 
-        </div>
-      </div>
         
-    </div>
-  </section>
- <!-- Option 1: Bootstrap Bundle with Popper -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <div class="wrapper_contact">
+            <div class="container">
+                <h1 class="contact_title">Contact us</h1>
+            </div>
+        </div>
+        
+    </section>
 
- <!-- Option 2: Separate Popper and Bootstrap JS -->
- <!--
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
- -->
+    <section class="contact_info">
+        <div class="container">
+            <h2 class="contact_subtitle">
+                Lets start a Conversation
+            </h2>
+            <div class="contact_wrapper">
+                <div class="contact_data">
+                    <ul class="contact_list">
+                        <li>Opening hours: 9:00-18:00</li>
+                        <li>hey@coliving.fi</li>
+                        <li>+358 45 223-43-12</li>
+                        <li>Hämeenlinna 23A, Finland</li>
+                    </ul>
+                    <div class="maps">
+                        <iframe class="maps_info" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9025009626635!2d2!3d3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2ba8689ed0920d!2z0J_QmNCm0JjQmtCQ0KLQng!5e0!3m2!1sbg!2sus!4v1448115192914"></iframe>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Country">
+                    <textarea placeholder="Enter your message"></textarea>
+                    <div class="contact_warning">Please note: all fields are required to fill.</div>
+                    <div class="descr_btn">Send message</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_column">
+                    <div class="footer_adress">
+                        Lehmustie 5A21
+                        13100 hämenlinna
+                        
+                    </div>
+                    <div class="footer_copy">
+                        Y-tunnus - 53109
+                        Copyright © 2022
+                    </div>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href="#"><li>Apply for</li></a>
+                        <a href="#"><li>Apartments</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href=""><li>Report a problem</li></a>
+                        <a href=""><li>Terminate you</li></a>
+                        <a href=""><li>Privacy policy</li></a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href=""><li>Contact</li></a>
+                        <a href=""><li>Information</li></a>
+                        <a href=""><li>E-form</li></a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <div class="footer_title">
+                        Follow Us:
+                    </div>
+                    <div class="footer_social">
+                        <a href="#"><img src="icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="icons/youtube.png" alt=""></a>
+                        <a href="#"><img src="icons/whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>          
 </body>
-<script src="totop.js"></script>
 </html>

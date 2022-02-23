@@ -1,294 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title> COLIVING </title>
-    <link rel="stylesheet" href="styles1.css">
-
-    <style>
-      
-      
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: #D9AB74;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-      }
-      
-      #myBtn:hover {
-        background-color: #eca54d;
-      }
-      </style>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-  
-  
-  
-<section class="promo">
-  
-    <header>
-      <div class="container">
-          <div class="row">
-              <div class="logo"><img src="images/Logo.svg" alt="logo"></div>
-              <ul class="menu">
-                <a href="index.html"><li class="menu_link menu_active">Home</li></a>
-                  
-                <a href="apply.html"><li class="menu_link">Apply</li></a>
-                
-                <a href="about.html"><li class="menu_link">About</li></a>
-                
-                <a href="#"><li class="menu_link">News</li></a>
-                
-                <a href="contact.html"><li class="menu_link">Contact</li></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top Top!</button>
+    <section class="promo">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+                    <ul class="menu">
+                        <li class="menu_link"><a class="menu_link active" href="#">Home</a></li>
 
-               
+                        <li class="menu_link"><a href="apartment.html">Apartment</a></li>
 
+                        <li class="menu_link"><a href="about_us.html">About</a></li>
 
+                        <li class="menu_link"><a href="#news">News</a></li>
 
-              </ul>
-          </div>
-      </div>
-  </header>
+                        <li class="menu_link"><a href="contact.html">Contact</a></li>
 
-  <div class="wrapper">
-    <div class="container">
-      <h1 class="title">We offer you co-living spaces</h1>
-      <div class="subtitle">The amenities you can’t live without at a price you can afford. Where skyline views, 
-        modern luxury, and amenities seamlessly merge.</div>
-    </div>
-  </div>
-</section>
+                    </ul>
+                </div>
+            </div>
+            <ul class="menu_mini">
+                <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
+                <li class="menu_item"><a href="#apartment" class="menu_link">Apartment</a></li>
+                <li class="menu_item"><a href="about_us.html" class="menu_link">About</a></li>
+                <li class="menu_item"><a href="#news" class="menu_link">News</a></li>
+                <li class="menu_item"><a href="contact.html" class="menu_link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
 
-<section class="apartment">
-  <div class="container">
-    <h2 class="apartment_title">Apartments in Hämeenlinna</h2>
-  <div class="catalog">
-    <div class="catalog_wrapper">
-      <div class="catalog_img">
-        <img src="images/Group 5.png" alt="image">
-      </div>
-      <div class="catalog_info">
-        <ul class="catalog_menu">
-          <li class="catalog_link">Beds <br>
-          <span>4</span></li>
-          <li class="catalog_link">Baths <br>
-          <span>2</span></li>
-          <li class="catalog_link">Type <br>
-          <span>Apartment</span></li>
-          <li class="catalog_link">Size(m^2) <br>
-          <span>88</span></li>
-          <li class="catalog_link">Min. stay <br>
-          <span>1 month</span></li>
-          <li class="catalog_link">WiFi <br>
-          <span>300 Mb</span></li>
-          <li class="catalog_link">Price <br>
-          <span>200€/m</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="catalog_descr">
-      <div class="descr_title"><h3>Fully Renovated Modern Unit</h3></div>
-      <div class="descr_text">
-        <p>Our members are curious and open to people and ideas around them. Never miss an opportunity to connect with interesting people. They cultivate collaboration and exchange amongst members and the extended community. </p>
-        <br>
-        <p>They think green and enable sustainable lifestyles through sharing and efficient use of resources and space. They stay foolish, inspiring, and empower fellow members to be active creators in the world around them.</p>
-        <br>
-        <p>From the first house until now it has been a journey full of little improvement to rethink the way people are living together.</p>
-      </div>
-      <div class="descr_btn"><a href="#">Check availability</a></div>
-    </div>
-  </div>
-  <div class="catalog">
-    <div class="catalog_wrapper">
-      <div class="catalog_img">
-        <img src="images/Group 7.png" alt="image">
-      </div>
-      <div class="catalog_info">
-        <ul class="catalog_menu">
-          <li class="catalog_link">Beds <br>
-          <span>4</span></li>
-          <li class="catalog_link">Baths <br>
-          <span>2</span></li>
-          <li class="catalog_link">Type <br>
-          <span>Apartment</span></li>
-          <li class="catalog_link">Size(m^2) <br>
-          <span>88</span></li>
-          <li class="catalog_link">Min. stay <br>
-          <span>1 month</span></li>
-          <li class="catalog_link">WiFi <br>
-          <span>300 Mb</span></li>
-          <li class="catalog_link">Price <br>
-          <span>200€/m</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="catalog_descr">
-      <div class="descr_title"><h3>Apartment Visämaki</h3></div>
-      <div class="descr_text">
-        <p>This apartment are designed for the customers who want to visit the place with pets. </p>
-        <br>
-        <p>There are many facilities like big and spacious rooms, free parking, washing machines and dryers as well as laundry services. 
-          <br>We have our own gym for the customers as well as swimming area near the apartment in a beautiful lake. </p>
-        <br>
-        <p>Welcome!</p>
-      </div>
-      <div class="descr_btn"><a href="#">Check availability</a></div>
-    </div>
-  </div>
-  <div class="catalog">
-    <div class="catalog_wrapper">
-      <div class="catalog_img">
-        <img src="images/Group 10.png" alt="image">
-      </div>
-      <div class="catalog_info">
-        <ul class="catalog_menu">
-          <li class="catalog_link">Beds <br>
-          <span>4</span></li>
-          <li class="catalog_link">Baths <br>
-          <span>2</span></li>
-          <li class="catalog_link">Type <br>
-          <span>Apartment</span></li>
-          <li class="catalog_link">Size(m^2) <br>
-          <span>88</span></li>
-          <li class="catalog_link">Min. stay <br>
-          <span>1 month</span></li>
-          <li class="catalog_link">WiFi <br>
-          <span>300 Mb</span></li>
-          <li class="catalog_link">Price <br>
-          <span>200€/m</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="catalog_descr">
-      <div class="descr_title"><h3>Apartment Aulanko</h3></div>
-      <div class="descr_text">
-        <p>Apartment Aulanko are located in the height of hämeenlinna city. There is a nice view of the city hämeenlinna from our apartments. In this apartments basically you can enjoy with nature.  </p>
-        <br>
-        <p>We have all the services in our apartment.  There is a lot to see in Aulanko Nature Reserve, in addition to the beautiful scenery.</p>
-        <br>
-        <p>The forest park of Aulanko, its sights, and the view from the scenic lookout tower of Aulangonvuori Hill over the national landscape attract more visitors every year. The area is best suitable for day trips. Welcome!</p>
-      </div>
-      <div class="descr_btn"><a href="#">Check availability</a></div>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section class="about_us">
-  <div class="container">
-    <div class="container_about_us">
-      <h2 class="h2_white">About us</h2>
-      <div class="h2_subtitle">We are the rental company which we shares our apartments for clients in an affordable prices. We have modern apartments with different kinds of facilities in Hämeenlinna. You will experience the Finnish nature , Sauna, and Finnish lifestyle during the stay in our apartment.</div>
-    </div>
-  </div>
-</section>
-
-<section class="news">
-  <div class="container">
-    <h2 class="h2_white">news</h1>
-      <div class="news_wrapper">
-        <div class="news_info">
-          <h3>Privacy policy 2022</h3>
-          <p class="date">05.01.2022</p>
-          <p class="text_white">We have all the services in our apartment.  There is a lot to see in Aulanko Nature Reserve, in addition to the beautiful scenery.<br><br>Maecenas ac porttitor lectus, et consequat orci. Praesent non laoreet odio.  </p>
-          <div class="descr_btn"><a href="#">read more</a></div>
-        </div>  
-          <div class="news_info">
-            <h3>Pay via PayPal</h3>
-            <p class="date">10.01.2022</p>
-            <p class="text_white">The forest park of Aulanko, its sights, and the view from the scenic lookout tower of Aulangonvuori Hill over the national landscape attract more visitors every year.<br><br> 
-    
-              The area is best suitable for day trips. Welcome!
-              </p>
-            <div class="descr_btn"><a href="#">read more</a></div>
-          </div> 
-            <div class="news_info">
-              <h3>Best apartments</h3>
-              <p class="date">11.01.2022</p>
-              <p class="text_white">Apartment Aulanko are located in the height of hämeenlinna city.<br><br> 
-    
-                There is a nice view of the city hämeenlinna from our apartments. There is a nice view of. In this apartments basically you can enjoy with nature. 
-                  </p>
-              <div class="descr_btn"><a href="#">read more</a></div>
-            </div> 
-      </div>
-
-  </div>
-
-</section>
-<div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-</div>
-
-<section class="footer">
-    <div class="container">
-      <div class="footer_wrapper">
-        <div class="adress">Lehmustie 5A21
-          13100 Hämenlinna<br>
-          Y-tunnus - 53109
-          Copyright © 2022</div>
-        <div class="footer_elem">
-          <ul>
-            <a href="#" class="footer_link">Apply for</a>
-            <a href="#" class="footer_link">Apartments</a>
-            <a href="#" class="footer_link">FAQ</a>
-          </ul>
+        <div class="panel">
+            <div id="blue" data-color="#b3e5fc" onclick="changeColor('blue')"></div>
+            <div id="red" data-color="#ce8f96" onclick="changeColor('red')"></div>
+            <div id="purple" data-color="#8e6ad1" onclick="changeColor('purple')"></div>
+            <div id="green" data-color="#c5e1a5" onclick="changeColor('green')"></div>
+            <div id="orange" data-color="#D9AB74" onclick="changeColor('orange')"></div>
         </div>
-        <div class="footer_elem">
-          <ul>
-            <a href="#" class="footer_link">Report a problem</a>
-            <a href="#" class="footer_link">Terminate you</a>
-            <a href="#" class="footer_link">Privacy policy</a>
-          </ul>
+
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="title">We offer you co-living spaces</h1>
+                <div class="subtitle">The amenities you can’t live without at a price you can afford. Where skyline
+                    views, modern luxury, and amenities seamlessly merge.</div>
+            </div>
         </div>
-        <div class="footer_elem">
-          <ul>
-            <a href="contactus.php" class="footer_link">Contact</a>
-            <a href="#" class="footer_link">Information</a>
-            <a href="#" class="footer_link">E-form</a>
-          </ul>
-        </div>
-        <div class="footer_elem">
-          <p>FOLLOW US</p>
-          <div class="icons">
-            <a href="#" class="facebook"><img src="images/facebook.png"></a>
-            <a href="#" class="youtube"><img src="images/youtube.png"></a>
-            <a href="#" class="watsapp"><img src="images/whatsapp.png"></a>
-          </div> 
-        </div>
-      </div>
-        
+
+    </section>
+    <div class="zoom">
+        <img src="img/catalog.png" id="src_image" alt="catalog" onclick="zoomOff()">
     </div>
-  </section>
-  
- <!-- Option 1: Bootstrap Bundle with Popper -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <section class="apartment" id="apartment">
+        <div class="container">
+            <h2 class="apartment_title">Apartments in Hämeenlinna</h2>
 
- <!-- Option 2: Separate Popper and Bootstrap JS -->
- <!--
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
- -->
+            <div class="catalog">
+                <div class="catalog_wrapper">
+                    <div class="catalog_image">
+                        <img src="img/catalog.png" alt="catalog" onclick="zoomOn('img/catalog.png')">
+                    </div>
+                    <div class="catalog_info">
+                        <ul class="catalog_menu">
+                            <li class="catalog_link">Beds <br><span>4</span></li>
+                            <li class="catalog_link">Baths <br><span>2</span></li>
+                            <li class="catalog_link">Type <br><span>alartment</span></li>
+                            <li class="catalog_link">Size(m<sup>2</sup>) <br><span>2</span></li>
+                            <li class="catalog_link">Min.stay <br> <span>1 months</span></li>
+                            <li class="catalog_link">Wifi <br> <span>300Mb</span></li>
+                            <li class="catalog_link">Price <br><span>20$/m</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_descr">
+                    <div class="descr_title">Fully Renovated Modern Unit</div>
+                    <div class="descr_text">
+                        <p>Our members are curious and open to people and ideas around them. Never miss an opportunity
+                            to connect with interesting people. They cultivate collaboration and exchange amongst
+                            members and the extended community. </p>
+                        <br>
+                        <p>They think green and enable sustainable lifestyles through sharing and efficient use of
+                            resources and space. They stay foolish, inspiring, and empower fellow members to be active
+                            creators in the world around them.</p>
+                        <br>
+                        <p>From the first house until now it has been a journey full of little improvement to rethink
+                            the way people are living together.</p>
+                    </div>
+                    <div class="descr_btn">
+                        Check availability
+                    </div>
+                </div>
+            </div>
+            <div class="catalog" id="catalog">
+                <div class="catalog_wrapper">
+                    <div class="catalog_image">
+                        <img src="img/catalog2.jpg" class="catalog2" alt="catalog" onclick="zoomOn('img/catalog2.jpg')">
+                    </div>
+                    <div class="catalog_info">
+                        <ul class="catalog_menu">
+                            <li class="catalog_link">Beds <br><span>4</span></li>
+                            <li class="catalog_link">Baths <br><span>2</span></li>
+                            <li class="catalog_link">Type <br><span>alartment</span></li>
+                            <li class="catalog_link">Size(m<sup>2</sup>) <br><span>2</span></li>
+                            <li class="catalog_link">Min.stay <br> <span>1 months</span></li>
+                            <li class="catalog_link">Wifi <br> <span>300Mb</span></li>
+                            <li class="catalog_link">Price <br><span>20$/m</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_descr">
+                    <div class="descr_title">Apartment Visämaki </div>
+                    <div class="descr_text">
+                        <p>This apartment are designed for the customers who want to visit the place with pets.</p>
+                        <br>
+                        <p>There are many facilities like big and spacious rooms, free parking, washing machines and
+                            dryers as well as laundry services. </p>
+                        <br>
+                        <p> We have our own gym for the customers as well as swimming area near the apartment in a
+                            beautiful lake. </p> <br><br>
+                        <p>
+                            Welcome!
+                        </p>
+                    </div>
+                    <div class="descr_btn">
+                        Check availability
+                    </div>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="catalog_wrapper">
+                    <div class="catalog_image">
+                        <img src="img/catalog3.jpg" alt="catalog" onclick="zoomOn('img/catalog3.jpg')">
+                    </div>
+                    <div class="catalog_info">
+                        <ul class="catalog_menu">
+                            <li class="catalog_link">Beds <br><span>4</span></li>
+                            <li class="catalog_link">Baths <br><span>2</span></li>
+                            <li class="catalog_link">Type <br><span>alartment</span></li>
+                            <li class="catalog_link">Size(m<sup>2</sup>) <br><span>2</span></li>
+                            <li class="catalog_link">Min.stay <br> <span>1 months</span></li>
+                            <li class="catalog_link">Wifi <br> <span>300Mb</span></li>
+                            <li class="catalog_link">Price <br><span>20$/m</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog_descr">
+                    <div class="descr_title">Apartment Aulanko</div>
+                    <div class="descr_text">
+                        <p>Apartment Aulanko are located in the height of hämeenlinna city. There is a nice view of the
+                            city hämeenlinna from our apartments. In this apartments basically you can enjoy with
+                            nature.
+                        </p>
+                        <br>
+                        <p>
+                            We have all the services in our apartment. There is a lot to see in Aulanko Nature Reserve,
+                            in addition to the beautiful scenery.</p>
+                        <br>
+                        <p>The forest park of Aulanko, its sights, and the view from the scenic lookout tower of
+                            Aulangonvuori Hill over the national landscape attract more visitors every year. The area is
+                            best suitable for day trips. Welcome! </p>
+                    </div>
+                    <div class="descr_btn">
+                        Check availability
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="about">
+        <div class="container">
+            <div class="about_wrapper">
+                <div class="about_title">
+                    ABOUT us
+                </div>
+                <div class="about_subtitle">
+                    We are the rental company which we shares our apartments for clients in an affordable prices. We
+                    have modern apartments with different kinds of facilities in Hämeenlinna. You will experience the
+                    Finnish nature , Sauna, and Finnish lifestyle during the stay in our apartment.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="container">
+            <div class="news_title">
+                NEWS
+            </div>
+            <div class="news_card">
+                <div class="card">
+                    <div class="card_title">Privacy policy 2022</div>
+                    <div class="card_date">05.01.2022</div>
+                    <div class="card_text">
+                        We have all the services in our apartment. There is a lot to see in Aulanko Nature Reserve, in
+                        addition to the beautiful scenery.
+                        <br><br>
+                        Maecenas ac porttitor lectus, et consequat orci. Praesent non laoreet odio.
+                    </div>
+                    <div class="card_btn descr_btn">Read more</div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Privacy policy 2022</div>
+                    <div class="card_date">05.01.2022</div>
+                    <div class="card_text">
+                        We have all the services in our apartment. There is a lot to see in Aulanko Nature Reserve, in
+                        addition to the beautiful scenery.
+                        <br><br>
+                        Maecenas ac porttitor lectus, et consequat orci. Praesent non laoreet odio.
+                    </div>
+                    <div class="card_btn descr_btn">Read more</div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Privacy policy 2022</div>
+                    <div class="card_date">05.01.2022</div>
+                    <div class="card_text">
+                        We have all the services in our apartment. There is a lot to see in Aulanko Nature Reserve, in
+                        addition to the beautiful scenery.
+                        <br><br>
+                        Maecenas ac porttitor lectus, et consequat orci. Praesent non laoreet odio.
+                    </div>
+                    <div class="card_btn descr_btn">Read more</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_column">
+                    <div class="footer_adress">
+                        Lehmustie 5A21
+                        13100 hämenlinna
+
+                    </div>
+                    <div class="footer_copy">
+                        Y-tunnus - 53109
+                        Copyright © 2022
+                    </div>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href="#">
+                            <li>Apply for</li>
+                        </a>
+                        <a href="#">
+                            <li>Apartments</li>
+                        </a>
+                        <a href="#">
+                            <li>FAQ</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href="">
+                            <li>Report a problem</li>
+                        </a>
+                        <a href="">
+                            <li>Terminate you</li>
+                        </a>
+                        <a href="">
+                            <li>Privacy policy</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <ul class="footer_menu">
+                        <a href="">
+                            <li>Contact</li>
+                        </a>
+                        <a href="">
+                            <li>Information</li>
+                        </a>
+                        <a href="">
+                            <li>E-form</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <div class="footer_title">
+                        Follow Us:
+                    </div>
+                    <div class="footer_social">
+                        <a href="#" class="a_btn"><img src="icons/facebook.png" alt=""></a>
+                        <a href="#"><img src="icons/youtube.png" alt=""></a>
+                        <a href="#"><img src="icons/whatsapp.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/changeColor.js"></script>
+    <script src="js/imgZoom.js"></script>
 </body>
-<script src="totop.js"></script>
 
-  
-  
 </html>
