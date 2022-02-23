@@ -155,8 +155,7 @@ ul>li>.active {
 
 .promo {
     min-height: 722px;
-    background: url("../img/promo.png") center center/cover no-repeat;
-
+    background: url("/laravel/public/img/promo.png") center center/cover no-repeat;
 }
 
 .wrapper {
@@ -339,7 +338,7 @@ ul>li>.active {
 
 .about {
     min-height: 583px;
-    background: url("../img/about_us.jpg") center center/cover no-repeat
+    background: url("/laravel/public/img/about_us.jpg") center center/cover no-repeat
 }
 
 .about_wrapper {
@@ -447,7 +446,7 @@ ul>li>.active {
 
 .contact {
     min-height: 208px;
-    background: url("../img/promo.png") center center/cover no-repeat;
+    background: url("/laravel/public/img/promo.png") center center/cover no-repeat;
 
 }
 
@@ -536,19 +535,19 @@ ul>li>.active {
 }
 
 .contact_list li:first-child::before {
-    background: url('../icons/clock.png') center center/cover no-repeat;
+    background: url('/laravel/public/img/icons/clock.png') center center/cover no-repeat;
 }
 
 .contact_list li:nth-child(2)::before {
-    background: url('../icons/gmail.png') center center/cover no-repeat;
+    background: url('/laravel/public/img/icons/gmail.png') center center/cover no-repeat;
 }
 
 .contact_list li:nth-child(3)::before {
-    background: url('../icons/phone.png') center center/cover no-repeat;
+    background: url('/laravel/public/img/icons/phone.png') center center/cover no-repeat;
 }
 
 .contact_list li:last-child::before {
-    background: url('../icons/web.png') center center/cover no-repeat;
+    background: url('/laravel/public/img/icons/web.png') center center/cover no-repeat;
 }
 
 .maps {
@@ -691,7 +690,7 @@ ul>li>.active {
 
 .story {
     min-height: 604px;
-    background: url("../img/our_story.png") center center/cover no-repeat;
+    background: url("/laravel/public/img/our_story.png") center center/cover no-repeat;
     margin-top: 80px;
 }
 
