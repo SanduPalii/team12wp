@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Feb 21, 2022 at 08:33 AM
+-- Generation Time: Mar 01, 2022 at 09:56 AM
 -- Server version: 8.0.27
 -- PHP Version: 8.0.15
 
@@ -24,19 +24,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Apartment`
+-- Table structure for table `apartment`
 --
 
-CREATE TABLE `Apartment` (
-  `ID_apartment` int NOT NULL,
-  `Area` int NOT NULL,
-  `Price` int NOT NULL,
-  `Avalability` tinyint(1) NOT NULL,
-  `Wifi` tinyint(1) NOT NULL,
-  `Beds` int NOT NULL,
-  `Rooms` int NOT NULL,
-  `Baths` int NOT NULL
+CREATE TABLE `apartment` (
+  `apartment_id` int NOT NULL,
+  `price` int NOT NULL,
+  `available` tinyint(1) NOT NULL,
+  `wifi` int NOT NULL,
+  `beds` int NOT NULL,
+  `rooms` int NOT NULL,
+  `baths` int NOT NULL,
+  `size` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `apartment`
+--
+
+INSERT INTO `apartment` (`apartment_id`, `price`, `available`, `wifi`, `beds`, `rooms`, `baths`, `size`) VALUES
+(14, 600, 1, 200, 12, 7, 7, 500),
+(18, 500, 0, 123, 2, 1, 1, 30),
+(19, 234, 1, 200, 4, 2, 3, 144),
+(20, 211, 1, 1, 4, 2, 2, 144),
+(22, 800, 1, 200, 3, 3, 2, 60),
+(23, 890, 1, 150, 12, 3, 2, 87),
+(24, 500, 0, 233, 4, 2, 1, 57);
 
 -- --------------------------------------------------------
 
@@ -86,14 +99,23 @@ CREATE TABLE `Customer` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Login`
+-- Table structure for table `login`
 --
 
-CREATE TABLE `Login` (
-  `ID_login` int NOT NULL,
-  `Email` varchar(30) NOT NULL,
-  `Password` varchar(30) NOT NULL
+CREATE TABLE `login` (
+  `id` int NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `usertype` varchar(50) NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `username`, `password`, `usertype`) VALUES
+(1, 'admin', '1234', 'admin'),
+(2, 'user', '1234', 'user');
 
 -- --------------------------------------------------------
 
@@ -125,10 +147,10 @@ CREATE TABLE `Staff` (
 --
 
 --
--- Indexes for table `Apartment`
+-- Indexes for table `apartment`
 --
-ALTER TABLE `Apartment`
-  ADD PRIMARY KEY (`ID_apartment`);
+ALTER TABLE `apartment`
+  ADD PRIMARY KEY (`apartment_id`);
 
 --
 -- Indexes for table `Contact`
@@ -149,10 +171,10 @@ ALTER TABLE `Customer`
   ADD PRIMARY KEY (`ID_customer`);
 
 --
--- Indexes for table `Login`
+-- Indexes for table `login`
 --
-ALTER TABLE `Login`
-  ADD PRIMARY KEY (`ID_login`);
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `Newsletter`
@@ -171,10 +193,10 @@ ALTER TABLE `Staff`
 --
 
 --
--- AUTO_INCREMENT for table `Apartment`
+-- AUTO_INCREMENT for table `apartment`
 --
-ALTER TABLE `Apartment`
-  MODIFY `ID_apartment` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `apartment`
+  MODIFY `apartment_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `Contact`
@@ -195,10 +217,10 @@ ALTER TABLE `Customer`
   MODIFY `ID_customer` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `Login`
+-- AUTO_INCREMENT for table `login`
 --
-ALTER TABLE `Login`
-  MODIFY `ID_login` int NOT NULL AUTO_INCREMENT;
+ALTER TABLE `login`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `Newsletter`
