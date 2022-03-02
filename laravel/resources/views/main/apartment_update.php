@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include '../components/connect.php';
 $id=$_GET['updateid'];
 $sql="Select * from  `apartment` where apartment_id=$id";
 $result=mysqli_query($conn,$sql);
@@ -35,6 +35,7 @@ if(isset($_POST['submit'])){
         die(mysqli_error($conn));
     }
 }
+include '../components/header.php';
 ?>
 
 <!doctype html>
@@ -91,3 +92,19 @@ if(isset($_POST['submit'])){
 
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="/laravel/resources/css/style.css">
+    <link rel="stylesheet" href="/laravel/resources/css/media.css">
+</head>
+<body>
+
+
+<?php include '../components/footer.php'; ?>

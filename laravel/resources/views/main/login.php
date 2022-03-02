@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include '../components/connect.php';
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $_SESSION["username"]=$username;
         
-        header("location:apartment_list.php");
+        header("location:apartment_admin.php");
     }
 
     else
@@ -35,11 +35,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 }
 $title="login";
 $md= "This is meta description is login";
-include 'header.php';
+
     
 ?>
-    
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,11 +45,31 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="/laravel/resources/css/style.css">
+    <link rel="stylesheet" href="/laravel/resources/css/media.css">
 </head>
 <body>
 
-    <center>
+<section class="contact">
+    <?php include '../components/header.php';?>
+    <div class="wrapper_contact">
+        <div class="container">
+            <h1 class="contact_title"></h1>
+        </div>
+    </div>
+
+</section>
+
+<section class="contact_info">
+    <div class="container">
+        <h2 class="contact_subtitle">
+            Welcome to Admin Login
+        </h2>
+        <div class="contact_wrapper">
+        <center>
             <h1></h1>
             <br><br>Login Form<br><br>
             <div style="background-color:#6E5F56; width: 500px;">
@@ -80,10 +98,8 @@ include 'header.php';
         <br><br>
         </div>
     </center>
-    <br><br><br>
-
-</body>
-</html>
-<?php
-    include 'footer.php';
-    ?>
+    
+        </div>
+    </div>
+</section>
+<?php include '../components/footer.php';?>

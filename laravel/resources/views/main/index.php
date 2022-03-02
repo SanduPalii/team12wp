@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="/laravel/resources/css/style.css">
     <link rel="stylesheet" href="/laravel/resources/css/media.css">
+    
 </head>
+
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top Top!</button>
 <section class="promo">
@@ -70,7 +72,7 @@
                         the way people are living together.</p>
                 </div>
                 <div class="descr_btn">
-                    Check availability
+                <a href="apartment_list.php">Check availability </a>
                 </div>
             </div>
         </div>
@@ -106,7 +108,7 @@
                     </p>
                 </div>
                 <div class="descr_btn">
-                    Check availability
+                <a href="apartment_list.php">Check availability </a>
                 </div>
             </div>
         </div>
@@ -144,7 +146,7 @@
                         best suitable for day trips. Welcome! </p>
                 </div>
                 <div class="descr_btn">
-                    Check availability
+                <a href="apartment_list.php">Check availability </a>
                 </div>
             </div>
         </div>
