@@ -7,7 +7,7 @@ if(isset($_GET['deleteid'])){
     $result=mysqli_query($conn,$sql);
     if($result){
         //echo"Deleted successful";
-        header('location:apartment_admin.php');
+        header('location:../main/apartment_admin.php');
     }else{
         die("Connection failed: ".$conn->connect_error);
     }

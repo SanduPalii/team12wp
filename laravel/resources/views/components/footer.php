@@ -49,6 +49,8 @@
                     <a href="">
                         <li>E-form</li>
                     </a>
+                    <a href="login.php" class="footer_link">Admin</a>
+                    </a>
                 </ul>
             </div>
             <div class="footer_column">
