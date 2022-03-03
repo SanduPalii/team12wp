@@ -1,4 +1,5 @@
 <?php
+
 include '../components/connect.php';
 if(isset($_POST['submit'])){
     $price=$_POST['price'];
@@ -41,31 +42,31 @@ include '../components/header.php';
     <form  method="POST">
         <div class="form-group">
             <label>Price</label>
-            <input type="number" name="price" auto complete="off" class="form-control"placeholder="Enter Price in Euro(€)">
+            <input type="number" name="price" min="500" max="1500" auto complete="off" class="form-control"placeholder="Enter Price in Euro(€)">
         </div>
         <div class="form-group">
             <label>Available</label>
-            <input type="number" name="available" class="form-control"placeholder="Enter 0 for 'No' and 1 for 'Yes'">
+            <input type="number" name="available" min="0" max="1" class="form-control"placeholder="Enter 0 for 'No' and 1 for 'Yes'">
         </div>
         <div class="form-group">
             <label>Wifi</label>
-            <input type="number" name="wifi" class="form-control"placeholder="Enter the value of Wifi in MB">
+            <input type="number" name="wifi" min="50" max="300" class="form-control"placeholder="Enter the value of Wifi in MB">
         </div>
         <div class="form-group">
             <label>Beds</label>
-            <input type="number" name="beds" class="form-control"placeholder="Enter the numbers of Beds">
+            <input type="number" name="beds" min="1" max="20" class="form-control"placeholder="Enter the numbers of Beds">
         </div>
         <div class="form-group">
             <label>Rooms</label>
-            <input type="number" name="rooms" class="form-control"placeholder="Enter the numbers of Rooms">
+            <input type="number" name="rooms" min="1" max="10" class="form-control"placeholder="Enter the numbers of Rooms">
         </div>
         <div class="form-group">
             <label>Baths</label>
-            <input type="number" name="baths" class="form-control"placeholder="Enter the numbers of Baths">
+            <input type="number" name="baths" min="1" max="5" class="form-control"placeholder="Enter the numbers of Baths">
         </div>
         <div class="form-group">
             <label>Size</label>
-            <input type="number" name="size" class="form-control"placeholder="Enter numbers of square kilometers" >
+            <input type="number" name="size" min="20" max="500" class="form-control"placeholder="Enter numbers of square kilometers" >
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" name= "submit">save</button>
