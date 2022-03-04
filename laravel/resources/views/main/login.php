@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../components/connect.php';
 
 if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -15,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     if($row["usertype"]=="user") 
     {   
         $_SESSION["username"]=$username;
-        echo "user";
+        //echo "user";
     }
 
     else if($row["usertype"]=="admin") 
@@ -52,7 +53,6 @@ $md= "This is meta description is login";
     <link rel="stylesheet" href="/laravel/resources/css/media.css">
 </head>
 <body>
-
 <section class="contact">
     <?php include '../components/header.php';?>
     <div class="wrapper_contact">
