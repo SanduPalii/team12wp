@@ -86,6 +86,4 @@ if(isset($_POST['submit'])){
   <button type="submit" class="btn btn-primary" name = "submit">Update</button>
 </form>
 </section>
-<?php 
-include 'footer.php';
-?>
+<?php include '../components/afterlogin_footer.php'; ?>

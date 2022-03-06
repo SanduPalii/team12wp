@@ -1,7 +1,7 @@
 <?php
-$servername="localhost"; 
+$servername="db"; 
 $username="root";
-$password="root";
+$password="password";
 $dbname ="coliving_db";
 // creating connection 
 $conn = new mysqli($servername, $username, $password, $dbname);

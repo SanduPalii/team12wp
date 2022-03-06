@@ -14,26 +14,26 @@
             </div>
             <div class="footer_column">
                 <ul class="footer_menu">
-                    <a href="#">
+                    <a href="../main/apartment.php">
                         <li>Apply for</li>
                     </a>
-                    <a href="#">
+                    <a href="../main/apartment.php">
                         <li>Apartments</li>
                     </a>
-                    <a href="#">
-                        <li>FAQ</li>
+                    <a href="../main/apartment_list.php">
+                        <li>Check availablity</li>
                     </a>
                 </ul>
             </div>
             <div class="footer_column">
                 <ul class="footer_menu">
-                    <a href="">
-                        <li>Report a problem</li>
+                    <a href="../main/subscribe_newsletter.php">
+                        <li>Subscribe to news letter</li>
                     </a>
-                    <a href="">
+                    <a href="../main/contact.php">
                         <li>Terminate you</li>
                     </a>
-                    <a href="">
+                    <a href="../main/index.php">
                         <li>Privacy policy</li>
                     </a>
                 </ul>
@@ -41,9 +41,9 @@
             <div class="footer_column">
                 <ul class="footer_menu">
                     <a href="../main/contact.php">
-                        <li>Contract</li>
+                        <li>Contact</li>
                     </a>
-                    <a href="../main/apartment_admin.php">
+                    <a href="../main/login.php">
                         <li>Add apartment</li>
                     </a>
                     <a href="../main/login.php">

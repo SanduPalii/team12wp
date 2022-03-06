@@ -72,4 +72,4 @@ include '../components/header.php';
 
 
 </div>
-<?php include '../components/footer.php'; ?>
+<?php include '../components/afterlogin_footer.php'; ?>

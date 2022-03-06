@@ -96,6 +96,4 @@ if (isset($_POST['submit'])) {
 
 
   </body>
-<?php
-include '../components/footer.php';
-?>
+  <?php include '../components/afterlogin_footer.php'; ?>

@@ -28,7 +28,7 @@ if(isset($_SESSION["username"]))
 <body>
 
 <div class="container">
-<button class="add btn"><a href="apartment_add.php">Add apartment</a></button>
+<button class="add btn"><a href="apartment_add.php">Add apartment</a></button>  
 <table class="table">
   <thead>
     <tr>
@@ -84,5 +84,5 @@ if(isset($_SESSION["username"]))
 
 </body>
 </html>
-<?php include '../components/footer.php'; ?>
+<?php include '../components/afterlogin_footer.php'; ?>
 

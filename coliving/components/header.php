@@ -8,20 +8,22 @@
                         <li class="menu_link ">Home</li>
                     </a>
 
-                    <a href="../main/apartment.php">
-                        <li class="menu_link">Apartment</li>
+                    <a href="../main/apartment_list.php">
+                        <li class="menu_link">Availability</li>
                     </a>
 
                     <a href="../main/about_us.php">
                         <li class="menu_link ">About</li>
                     </a>
 
-                    <a href="#">
-                        <li class="menu_link">News</li>
-                    </a>
+
 
                     <a href="../main/contact.php">
                         <li class="menu_link">Contact</li>
+                    </a>
+
+                    <a href="../main/login.php">
+                        <li class="menu_link">Login</li>
                     </a>
 
                 </ul>
