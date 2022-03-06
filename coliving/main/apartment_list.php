@@ -60,4 +60,4 @@ include '../components/header.php';
       </div>
 </body>
 
-<?php include '../components/afterlogin_footer.php'; ?>
+<?php include '../components/footer.php'; ?>
