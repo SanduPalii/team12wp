@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['Email'];
     $id= $_GET['updateid'];
 
-    $sql="UPDATE `Customer` SET ID_customer=$id, F_name='$firstname', L_name='$lastname', Pass_id='$passid', Phone_num='$phone', Email= '$email' where ID_customer=$id"; 
+    $sql="UPDATE `Customer` SET `ID_customer`=$id, `F_name`='$firstname', `L_name`='$lastname', `Pass_id`='$passid', `Phone_num`='$phone', `Email`= '$email' where `ID_customer`=$id"; 
    
     $result = mysqli_query($conn,$sql);
     if($result){
