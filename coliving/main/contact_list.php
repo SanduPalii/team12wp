@@ -1,4 +1,16 @@
 <link rel="stylesheet" href="../css/style.css" class="style">
+<?php
+session_start(); 
+ 
+if(!isset($_SESSION["username"])) 
+{ 
+ header("Location:login.php"); 
+  exit; 
+}
+
+
+?>
+
 <?php include '../components/header.php';?>
 <div class="container my-5">
     <div class="button_list">

@@ -20,6 +20,7 @@ if(isset($_POST['submit'])){
     $price = $_POST['Price'];
     $idstaff = $_POST['ID_staff'];
     $idapartment = $_POST['ID_apartment'];
+    $id= $_GET['updateid'];
 
     $sql="UPDATE `Contract` SET `ID_contract` = $id,
     `ID_customer`='$idcustomer',
@@ -30,7 +31,7 @@ if(isset($_POST['submit'])){
         //echo"updated successfully";
         header('location:contract_list.php');
     }else{
-        echo 'adsa';
+        echo 'ERROR!';
         die(mysqli_error($conn));
     }
 }
@@ -88,7 +89,7 @@ if(isset($_POST['submit'])){
         </div>
         <div class="form-group">
             <label class="form-label">Apartment</label>
-            <?php $sql = "SELECT  * FROM Apartment";
+            <?php $sql = "SELECT  * FROM apartment";
             $result = mysqli_query($conn, $sql);
 
             echo "<select class='form-control' name='ID_apartment'><option>Apartment</option>";
