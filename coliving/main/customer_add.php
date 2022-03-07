@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
   if ($result) {
     header("location:customer_list.php");
   } else {
-    die(mysqli_error($con));
+    die(mysqli_error($conn));
   }
 }
 ?>

@@ -50,39 +50,38 @@ if(isset($_POST['submit'])){
   <body>
     <div class="container my-5">
     <h1 class="title">Apartment update</h1>
-    <form  method="POST">
-        <div class="form-group">
-            <label>Price</label>
-            <input type="number" name="price" auto complete="off" class="form-control" value=<?php echo $price;?>>
-        </div>
-        <div class="form-group">
-            <label>Available</label>
-            <input type="number" name="available" class="form-control"value=<?php echo $available;?>>
-        </div>
-        <div class="form-group">
-            <label>Wifi</label>
-            <input type="number" name="wifi" class="form-control"value=<?php echo $wifi;?>>
-        </div>
-        <div class="form-group">
-            <label>Beds</label>
-            <input type="number" name="beds" class="form-control"value=<?php echo $beds;?>>
-        </div>
-        <div class="form-group">
-            <label>Rooms</label>
-            <input type="number" name="rooms" class="form-control"value=<?php echo $rooms;?>>
-        </div>
-        <div class="form-group">
-            <label>Baths</label>
-            <input type="number" name="baths" class="form-control"value=<?php echo $baths;?>>
-        </div>
-        <div class="form-group">
-            <label>Size</label>
-            <input type="number" name="size" class="form-control"value=<?php echo $size;?>>
-        </div>
-
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary" name= "submit">Update</button>
-        </div>
+    <form  method="POST"> 
+        <div class="form-group"> 
+            <label>Price</label> 
+            <input type="number" name="price" min="500" max="1500" auto complete="off" class="form-control"placeholder="Enter Price in Euro(€)"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Available</label> 
+            <input type="number" name="available" min="0" max="1" class="form-control"placeholder="Enter 0 for 'No' and 1 for 'Yes'"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Wifi</label> 
+            <input type="number" name="wifi" min="50" max="300" class="form-control"placeholder="Enter the value of Wifi in MB"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Beds</label> 
+            <input type="number" name="beds" min="1" max="20" class="form-control"placeholder="Enter the numbers of Beds"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Rooms</label> 
+            <input type="number" name="rooms" min="1" max="10" class="form-control"placeholder="Enter the numbers of Rooms"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Baths</label> 
+            <input type="number" name="baths" min="1" max="5" class="form-control"placeholder="Enter the numbers of Baths"> 
+        </div> 
+        <div class="form-group"> 
+            <label>Size</label> 
+            <input type="number" name="size" min="20" max="500" class="form-control"placeholder="Enter numbers of square kilometers" > 
+        </div> 
+        <div class="form-group"> 
+            <button type="submit" class="btn btn-primary" name= "submit">save</button> 
+        </div> 
     </form>
     </div>
 

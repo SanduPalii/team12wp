@@ -65,7 +65,7 @@ if (isset($_POST['submit'])) {
     </div>
     <div class="mb-3 form-group">
         <label class="form-label">Apartment</label>
-        <?php $sql = "SELECT  * FROM Apartment";
+        <?php $sql = "SELECT  * FROM apartment";
         $result = mysqli_query($conn, $sql);
 
         echo "<select class='form-control' name='ID_apartment'><option>Customer</option>";
