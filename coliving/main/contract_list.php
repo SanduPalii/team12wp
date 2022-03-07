@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="../css/style.css">
 <?php
+session_start(); 
+ 
+if(!isset($_SESSION["username"])) 
+{ 
+ header("Location:login.php"); 
+  exit; 
+}
+?>
+<?php
 //for giving title to page
 $title = "This is title for the page";
 $md = "This is meta description for the page";

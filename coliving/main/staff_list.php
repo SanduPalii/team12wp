@@ -1,3 +1,12 @@
+<?php
+session_start(); 
+ 
+if(!isset($_SESSION["username"])) 
+{ 
+ header("Location:login.php"); 
+  exit; 
+}
+?>
 <link rel="stylesheet" href="../css/style.css" class="style">
 <?php include '../components/header.php'; ?>
 <div class="container my-5">
